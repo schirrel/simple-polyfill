@@ -3,4 +3,4 @@
  $('img').each((index,item)=>{console.log(item.src)})
  
  // iterare all objects find images in bg
- //TODO
+$('*').toArray().map((item)=> { return item.style.backgroundImage ||item.style.background.indexOf('url') != -1; }).filter((img)=> {return img}).forEach((img)=>{ console.log(img)})
