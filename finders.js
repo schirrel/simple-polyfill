@@ -32,3 +32,10 @@ Array.from(document.body.getElementsByTagName("img")).map((img)=> img.src)
  }).forEach((img) => {
      console.log(img)
  })
+Array.from(document.body.getElementsByTagName("*")).map((item) => {
+            return item.style.backgroundImage || item.style.background.indexOf('url') != -1;
+        }).filter((img) => {
+            return img
+        }).forEach((img) => {
+            console.log(img)
+        });
