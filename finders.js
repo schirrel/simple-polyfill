@@ -3,6 +3,8 @@
      console.log(item.src)
  })
 
+Array.from(document.body.getElementsByTagName("img")).map((img)=> img.src)
+
  // iterare all objects find images in bg
 
  //newers Jquery
