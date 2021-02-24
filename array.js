@@ -1,6 +1,6 @@
 "use strict";
 
-Array.prototype.groupBy = function(v, fn) {
+Array.prototype.groupBy = function(fn) {
 
     var self = this;
     var me = this.map(fn);
@@ -18,6 +18,14 @@ Array.prototype.groupBy = function(v, fn) {
     });
    return g;
 }
+
+/**
+
+Usage  
+arr.groupBy((item)=> item.category)
+
+
+*//
 
 
 Object.prototype.toArray = function() {
